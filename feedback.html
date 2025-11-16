@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Camp Feedback Form</title>
+
+    <style>
+        body {
+            background: #eef2f3;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: #fff;
+            padding: 25px;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ee1010;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        input[type="submit"] {
+            margin-top: 18px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #ee1010;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #25663e;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Blood Camp Feedback Form</h2>
+
+    <form action="your_feedback_processing_script.php" method="POST">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="camp">Blood Camp Name / Location</label>
+        <input type="text" id="camp" name="camp">
+
+        <label for="satisfaction">Overall Satisfaction</label>
+        <select id="satisfaction" name="satisfaction">
+            <option value="very_good">Very Good</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="needs_attention">Needs Attention</option>
+        </select>
+
+        <label for="staff">Staff Behaviour</label>
+        <select id="staff" name="staff">
+            <option value="very_good">Very Good</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="needs_attention">Needs Attention</option>
+        </select>
+
+        <label for="safety">Safety Experience</label>
+        <select id="safety" name="safety">
+            <option value="very_safe">Very Safe</option>
+            <option value="adequate">Adequate</option>
+            <option value="more_care_required">More Care Required</option>
+        </select>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</div>
+
+</body>
+</html>

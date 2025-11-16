@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Donation Camp - Contact Us</title>
+   
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+header {
+    background: crimson;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section {
+    width: 50%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin: 15px 0;
+}
+
+.input-box label {
+    font-weight: bold;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+
+#responseMsg {
+    text-align: center;
+    font-size: 18px;
+    color: green;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
+#arnav {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
+#mayur {
+    
+    padding: 10px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 620px;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation Camp</h1>
+        <p>Your little donation can save someone's life ❤️</p>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+            <div class="input-box">
+                <label>Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-box">
+                <label>Phone</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="input-box">
+                <label>Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="responseMsg"></p>
+    </section>
+
+    <footer>
+        
+        <p>© 2025 Blood Donation Camp. All Rights Reserved.</p>
+        <div class="container">
+            <div class="topic1">
+        <h3 id="arnav">Arnav</h3>
+        <h3 type="number">+91 87897 89878</h3>
+        <h3 type="text">arnav25@bloodcamp.org</h3>
+        </div>
+        <div class="topic2">
+        <h3 id="jyoti">Jyoti</h3>
+        <h3 type="number">+91 93577 55456</h3>
+        <h3 type="text">jyoti25@bloodcamp.org</h3>
+        </div>
+        <div class="topic3">
+        <h3 id="mayur">Mayuresh</h3>
+        <h3 type="number">+91 65477 56567</h3>
+        <h3 type="text">mayuresh25@blood.org</h3>
+        </div>
+        
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+

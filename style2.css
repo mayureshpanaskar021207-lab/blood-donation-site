@@ -1,0 +1,230 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fff5f5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d32f2f;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #d32f2f;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 3px;
+}
+
+.register-btn {
+  background: #d32f2f;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-btn:hover {
+  background: #b71c1c;
+}
+
+/* Hero */
+.hero {
+  height: 420px;
+  background: url("189681-886028714-ezgif.com-video-to-gif-converter.gif") center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #e63946;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-hero:hover {
+  background: #b4161b;
+}
+
+/* Why Donate */
+.why-donate {
+  text-align: center;
+  background: white;
+  padding: 50px 20px;
+  margin-top: -40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.reason {
+  background: #ffe3e3;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.reason:hover {
+  transform: scale(1.06);
+}
+
+.reason-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Camps */
+.camps {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.camp-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.camp-card {
+  flex: 1 1 280px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.camp-btn, .camp-btn-alt {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.camp-btn {
+  background: #d32f2f;
+}
+
+.camp-btn:hover {
+  background: #b71c1c;
+}
+
+.camp-btn-alt {
+  background: #2a79ff;
+}
+
+.camp-btn-alt:hover {
+  background: #004de6;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 25px 0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ff7070;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-socials a {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 12px;
+}
